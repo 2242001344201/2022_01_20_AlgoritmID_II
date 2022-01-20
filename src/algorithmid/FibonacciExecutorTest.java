@@ -10,7 +10,6 @@ public class FibonacciExecutorTest {
 
     @Before
     public void setUp() {
-
         fibonacciExecutor = new FibonacciExecutor();
     }
 

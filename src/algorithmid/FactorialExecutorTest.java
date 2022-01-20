@@ -10,7 +10,6 @@ public class FactorialExecutorTest {
 
     @Before
     public void setUp() {
-
         factorialExecutor = new FactorialExecutor();
     }
 
