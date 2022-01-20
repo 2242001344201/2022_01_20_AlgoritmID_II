@@ -12,6 +12,9 @@ public class Main {
         //algorithm2.choiceOfOption(1, 2, 10);
         System.out.println("1, 2, 10 - expected [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]\n" +
                 "                    " + Arrays.toString(algorithm2.choiceOfOption(1, 2, 10)));
+        //Algorithm algorithm3 = new Algorithm("1, 2, 10 - expected [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]\n" +
+        //        "                    " + Arrays.toString(algorithm2.choiceOfOption(1, 2, 10)));
+        System.out.println();
         Algorithm algorithm4 = new Algorithm();
         //algorithm4.choiceOfOption(2, 1, 8);
         System.out.println("2, 1, 7  - expected [1, 1, 2, 6, 24, 120, 720, 5040]\n" +

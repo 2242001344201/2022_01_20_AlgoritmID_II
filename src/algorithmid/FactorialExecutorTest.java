@@ -1,11 +1,8 @@
 package algorithmid;
 
-import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class FactorialExecutorTest {
 
@@ -16,24 +13,24 @@ public class FactorialExecutorTest {
         factorialExecutor = new FactorialExecutor();
     }
 
-    @After
-    public void tearDown() {
-
-    }
-
     @Test
     public void testFactorialFor() {
-
+        long[] actual = factorialExecutor.factorialWhile(8);
+        long[] expected = new long[] {1, 1, 2, 6, 24, 120, 720, 5040};
+        Assert.assertArrayEquals(actual, expected);
     }
 
     @Test
     public void testFactorialWhile() {
+        long[] actual = factorialExecutor.factorialWhile(8);
+        long[] expected = new long[] {1, 1, 2, 6, 24, 120, 720, 5040};
+        Assert.assertArrayEquals(actual, expected);
     }
 
     @Test
     public void testFactorialDoWhile() {
-        long[] actual = factorialExecutor.factorialDoWhile(5);
-        long[] expected = new long[]{1, 1, 2, 6, 24};
+        long[] actual = factorialExecutor.factorialDoWhile(8);
+        long[] expected = new long[] {1, 1, 2, 6, 24, 120, 720, 5040};
         Assert.assertArrayEquals(actual, expected);
     }
 }
